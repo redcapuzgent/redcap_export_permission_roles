@@ -1,0 +1,23 @@
+{
+  "name": "Export permission roles and data access group.",
+  "namespace": "uzgent\\ExportUserRoleDag",
+  "description": "This allows users to export permission CSVs with username/role/dag. ",
+  "authors": [
+    {
+      "name": "Lieven Vaneeckhaute",
+      "email": "lieven.vaneeckhaute@uzgent.be",
+      "institution": "University Hospital Ghent"
+    }
+  ],
+  "documentation" : "howto.html",
+  "links": {
+    "project": [
+      {
+        "name": "Export permissions",
+        "icon": "fas fa-file-upload",
+        "url": "export.php",
+        "show-header-and-footer": true
+      }
+    ]
+  }
+}
