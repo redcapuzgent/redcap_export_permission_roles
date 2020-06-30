@@ -18,6 +18,7 @@ header("Expires: 0");
 /**
  * @var $module \uzgent\ExportUserRoleDag\ExportUserRoleDag
  */
+$dags = $Proj->getGroups();
 if ($storeheader == "on") {
     if($dags == null) 
     {
@@ -29,7 +30,6 @@ if ($storeheader == "on") {
 }
 $userrights = UserRights::getRightsAllUsers();
 $roles =  UserRights::getRoles();
-$dags = $Proj->getGroups();
 if ($dags == null) {
     foreach($userrights as $username => $userdetails)
     {
