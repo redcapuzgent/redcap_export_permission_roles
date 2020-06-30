@@ -19,7 +19,13 @@ header("Expires: 0");
  * @var $module \uzgent\ExportUserRoleDag\ExportUserRoleDag
  */
 if ($storeheader == "on") {
-    echo "User name,Role name,Data access group,Expiration date\n";
+    if($dags == null) 
+    {
+        echo "User name,Role name,Expiration date\n";
+    } else {
+        echo "User name,Role name,Data access group,Expiration date\n";
+    }
+    
 }
 $userrights = UserRights::getRightsAllUsers();
 $roles =  UserRights::getRoles();
