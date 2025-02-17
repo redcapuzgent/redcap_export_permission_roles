@@ -1,23 +1,32 @@
 {
-  "name": "Export permission roles and data access group.",
-  "namespace": "uzgent\\ExportUserRoleDag",
-  "description": "This allows users to export permission CSVs with username/role/dag. ",
-  "authors": [
-    {
-      "name": "Lieven Vaneeckhaute",
-      "email": "redcap@uzgent.be",
-      "institution": "University Hospital Ghent"
+    "name": "Export permission roles and data access groups",
+    "namespace": "uzgent\\ExportUserRoleDag",
+    "description": "<b>This module has been deprecated since the introduction of the ability to import/export user rights in REDCap 10.8.0.</b><br>This module allows users to export permission CSVs with username/role/DAG.",
+    "authors": [
+        {
+            "name": "Lieven Vaneeckhaute",
+            "email": "redcap@uzgent.be",
+            "institution": "University Hospital Ghent"
+        },
+        {
+            "name": "Simon Vanderschaeghe",
+            "email": "redcap@uzgent.be",
+            "institution": "University Hospital Ghent"
+        }
+    ],
+    "documentation": "howto.html",
+    "links": {
+        "project": [
+            {
+                "name": "Export permissions",
+                "icon": "fas fa-file-upload",
+                "url": "export.php",
+                "show-header-and-footer": true
+            }
+        ]
+    },
+    "framework-version": 12,
+    "compatibility": {
+        "redcap-max-version": "10.7.99"
     }
-  ],
-  "documentation" : "howto.html",
-  "links": {
-    "project": [
-      {
-        "name": "Export permissions",
-        "icon": "fas fa-file-upload",
-        "url": "export.php",
-        "show-header-and-footer": true
-      }
-    ]
-  }
 }

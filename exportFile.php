@@ -33,13 +33,13 @@ $roles =  UserRights::getRoles();
 if ($dags == null) {
     foreach($userrights as $username => $userdetails)
     {
-        echo $username.",".$roles[$userdetails["role_id"]]['role_name'].",".$userdetails['expiration']."\n";
+        echo $module->escape($username.",".$roles[$userdetails["role_id"]]['role_name'].",".$userdetails['expiration']."\n");
     }
 }
 else {
     foreach($userrights as $username => $userdetails)
     {
-        echo $username.",".$roles[$userdetails["role_id"]]['role_name'].",".$dags[$userdetails["group_id"]].",".$userdetails['expiration']."\n";
+        echo $module->escape($username.",".$roles[$userdetails["role_id"]]['role_name'].",".$dags[$userdetails["group_id"]].",".$userdetails['expiration']."\n");
     }
 }
 
