@@ -1,7 +1,7 @@
 {
     "name": "Export permission roles and data access groups",
     "namespace": "uzgent\\ExportUserRoleDag",
-    "description": "<b>This module has been deprecated since the introduction of the ability to import/export user rights in REDCap 10.8.0.</b><br>This module allows users to export permission CSVs with username/role/DAG.",
+    "description": "<strong>This module has been deprecated since the introduction of the ability to import/export user rights in REDCap 10.8.0.</strong><br>This module allows users to export permission CSVs with username/role/DAG.",
     "authors": [
         {
             "name": "Lieven Vaneeckhaute",
@@ -25,7 +25,7 @@
             }
         ]
     },
-    "framework-version": 12,
+    "framework-version": 15,
     "compatibility": {
         "redcap-max-version": "10.7.99"
     }
